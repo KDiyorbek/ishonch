@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+body {
+    user-select: none;
+    text-align: center;
+    color: green;
+    background-color: black;
+    font-size: x-large;
+}
+
+.a0 {font-family: "Emilys Candy", cursive;}
+.a1 {font-family: "Press Start 2P", system-ui;}
+.a2 {font-family: "Silkscreen", sans-serif;}
+.a3 {font-family: "Bungee Tint", sans-serif;}
+.a4 {font-family: "Rubik Doodle Shadow", system-ui;}
+
+hr {border-color: darkslategray;}
+
+.a0:hover,.a1:hover,.a2:hover,.a4:hover {
+    color: red;
+}
+
+.a3:hover {
+    opacity: 0%;
+}
