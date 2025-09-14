@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#212121" />
   <link rel="stylesheet" href="style.css">
   <title>💚</title>
 </head>
 <body>
   <div class="line"><p id="brand">ISHONCH</p></div>
+  <audio src="cnd/bell.mp3" id="sound" preload="auto"></audio>
   <p class="a0">@ishonch</p><hr>
   <p class="a1">@ISHONCH</p><hr>
   <p class="a2">@ISHONCH</p><hr>
@@ -17,7 +19,11 @@
   <script>
     function triggerRotation() {
       const text = document.getElementById('brand');
+      const sound = document.getElementById('sound');
+
       text.classList.add('rotate');
+      sound.currentTime = 0;
+      sound.play();
       setTimeout(() => {
         text.classList.remove('rotate');
       }, 1000);
