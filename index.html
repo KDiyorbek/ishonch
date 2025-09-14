@@ -4,13 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>:]</title>
+  <title>💚</title>
 </head>
 <body>
-  <h1 class="a0">@ ishonch</h1><hr>
-  <h2 class="a1">@ISHONCH</h2><hr>
-  <h1 class="a2">@ISHONCH</h1><hr>
-  <h1 class="a3">@ISHONCH</h1><hr>
-  <h1 class="a4">@ISHONCH</h1>
+  <div class="line"><p id="brand">ISHONCH</p></div>
+  <p class="a0">@ishonch</p><hr>
+  <p class="a1">@ISHONCH</p><hr>
+  <p class="a2">@ISHONCH</p><hr>
+  <p class="a3">@ISHONCH</p><hr>
+  <p class="a4">@ISHONCH</p>
+
+  <script>
+    function triggerRotation() {
+      const text = document.getElementById('brand');
+      text.classList.add('rotate');
+      setTimeout(() => {
+        text.classList.remove('rotate');
+      }, 1000);
+    }
+
+    function syncToMinute() {
+      const now = new Date();
+      const msToNextMinute = (60 - now.getSeconds()) * 1000 - now.getMilliseconds();
+      setTimeout(() => {
+        triggerRotation();
+        setInterval(triggerRotation, 60000);
+      }, msToNextMinute);
+    }
+    syncToMinute();
+  </script>
 </body>
 </html>
