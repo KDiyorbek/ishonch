@@ -21,8 +21,8 @@
       const text = document.getElementById('brand');
       const sound = document.getElementById('sound');
 
+      navigator.vibrate(100);
       text.classList.add('rotate');
-      navigator.vibrate(200);
       sound.currentTime = 0;
       sound.play();
       setTimeout(() => {
