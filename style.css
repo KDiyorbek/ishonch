@@ -7,7 +7,6 @@
 body {
     user-select: none;
     text-align: center;
-    color: green;
     background-color: black;
     font-size: xx-large;
     cursor: crosshair;
@@ -35,7 +34,7 @@ body {
 
 .rotate {animation: spinOnce 1s linear;}
 
-.a0 {font-family: "Emilys Candy", cursive;}
+.a0 {font-family: "Emilys Candy", cursive; font-weight: bold;}
 .a1 {font-family: "Silkscreen", sans-serif;}
 .a2 {font-family: "Press Start 2P", system-ui; font-size: x-large;}
 .a3 {font-family: "Bungee Tint", sans-serif; cursor: help;}
@@ -43,6 +42,8 @@ body {
 
 hr {border-color: darkslategray;}
 
-.a0:hover,.a1:hover,.a2:hover,.a4:hover {color: red;}
+.a0,.a1,.a2,.a3,.a4 {color: #00BB00; opacity: 25%;}
 
-.a3:hover {opacity: 25%;}
+.a0:hover,.a1:hover,.a2:hover,.a3:hover,.a4:hover {color: green; opacity: 100%;}
+
+.a3:hover {touch-action: double-tap-zoom;}
